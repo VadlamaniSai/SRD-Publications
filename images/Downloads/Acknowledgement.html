@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<!-- saved from url=(0108)https://csvtu.digivarsity.online/WebApp/Kiosk/Forms/Acknowledgement.aspx?SvcID=1468&AppID=1468383000978112#! -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><title>
+
+</title>
+    <script src="./Acknowledgement_files/jquery-2.2.3.min.js.download" type="text/javascript"></script>
+    <script src="./Acknowledgement_files/bootstrap.min.js.download"></script>
+    <script src="./Acknowledgement_files/angular.min.js.download"></script>
+    <link href="./Acknowledgement_files/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <script src="./Acknowledgement_files/Wallet.js.download"></script>
+    <link href="./Acknowledgement_files/bootstrap.min.css" type="text/css" rel="stylesheet"><link href="./Acknowledgement_files/homestyle.css" type="text/css" rel="stylesheet"><link href="./Acknowledgement_files/StyleSheet1.css" type="text/css" rel="stylesheet"><link href="./Acknowledgement_files/StyleSheet3.css" type="text/css" rel="stylesheet"><link href="./Acknowledgement_files/StyleSheet4.css" type="text/css" rel="stylesheet"><link href="./Acknowledgement_files/style.admin.css" type="text/css" rel="stylesheet"><link href="./Acknowledgement_files/sb-admin-2.css" type="text/css" rel="stylesheet">
+    <script src="./Acknowledgement_files/jquery.liMarquee.js.download" type="text/javascript"></script>    
+    <script src="./Acknowledgement_files/DisableBackButton.js.download"></script>
+    
+
+    <script>
+
+        function CallPrint(strid) {
+            debugger;
+            var prtContent = document.getElementById(strid);
+            var WinPrint = window.open('', '', 'letf=0,top=0,width=800,height=700,toolbar=0,scrollbars=0,status=0');
+            WinPrint.document.write(prtContent.innerHTML);
+            WinPrint.document.close();
+            WinPrint.focus();
+            WinPrint.print();
+            WinPrint.close();
+        }
+
+        $(document).ready(function () {
+            $('#side-menu').show();
+            $('#divEvent').hide();
+            debugger;
+            var t_URL = "";
+            var t_AppID = "", t_ServiceID = "";
+            t_AppID = $("#HFAppID").val();
+            t_ServiceID = $("#HFServiceID").val();
+
+            //t_URL = "../Kiosk/Forms/SeniorCitizenPramaanapatra.aspx" + "?SvcID=" + t_ServiceID + "&AppID=" + t_AppID;
+            if (t_ServiceID == '101') {
+                t_URL = "../Common/HTML2PDF/HTMLToPDF.aspx" + "?SvcID=" + t_ServiceID + "&AppID=" + t_AppID;
+            } else if (t_ServiceID == '103')
+            { t_URL = "../Kiosk/Birth/Preview.aspx" + "?SvcID=" + t_ServiceID + "&AppID=" + t_AppID; }
+            else if (t_ServiceID == '104') {
+                t_URL = "../Kiosk/Death/Preview.aspx" + "?SvcID=" + t_ServiceID + "&AppID=" + t_AppID;
+            }
+            else if (t_ServiceID == '105') {
+                t_URL = "../NFBS/Acknowledgement.aspx" + "?SvcID=" + t_ServiceID + "&AppID=" + t_AppID;
+            }
+            else if (t_ServiceID == '106') {
+                t_URL = "../MBPY/Acknowledgement.aspx" + "?SvcID=" + t_ServiceID + "&AppID=" + t_AppID;
+            }
+            //t_URL = "../Common/HTML2PDF/HTMLToPDF.aspx" + "?SvcID=" + t_ServiceID + "&AppID=" + t_AppID;
+            loadIframe("FrameURL", t_URL);
+        });
+
+        function loadIframe(iframeName, url) {
+            var $iframe = $('#' + iframeName);
+            if ($iframe.length) {
+                $iframe.attr('src', url);
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+    <style type="text/css">
+        .form-heading {
+            text-transform: none !important;
+        }
+        .form-heading {
+            color: #820000;
+            text-align: left;
+            border-left: 15px solid #ce6d07;
+            border-right: 2px solid #ce6d07;
+            border-top: 1px solid #d8d8d8;
+            border-bottom: 1px solid #d8d8d8;
+            background: rgba(0, 0, 0, .075);
+            padding: 10px 20px 10px 15px;
+            border-top-right-radius: 2px;
+            border-top-left-radius: 2px;            
+            font-weight: bold;
+        }
+    </style>
+    
+    
+</head>
+<body data-new-gr-c-s-check-loaded="14.1076.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1076.0">
+    <form method="post" action="https://csvtu.digivarsity.online/WebApp/Kiosk/Forms/Acknowledgement.aspx?SvcID=1468&amp;AppID=1468383000978112" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEwNzk0NTc2MjYPZBYCZg8PFgQeD19fQW50aVhzcmZUb2tlbgUgMDlkOWFjNDMzZDJhNDljMmFjM2Y4YmU0NWFjYmE2NWUeEl9fQW50aVhzcmZVc2VyTmFtZWVkFgICAw9kFgYCAw9kFgJmDxYCHglpbm5lcmh0bWwFGFNBQ0hDSElEQU5BTkQgQ0hPVURIQVJZIGQCBQ9kFgICAQ9kFgICCQ8WAh8CBRMyNS0wOC0yMDIyIDIyOjM4OjA2ZAIJD2QWBAIDDxYCHgNzcmMFSi9XZWJBcHAvRXhhbWluYXRpb24vQWNrbm93bGVkZ2VtZW50LmFzcHg/U3ZjSUQ9MTQ2OCZBcHBJRD0xNDY4MzgzMDAwOTc4MTEyZAIFDw8WAh4LUG9zdEJhY2tVcmwFigEvV2ViQXBwL0NpdGl6ZW4vRm9ybXMvRGFzaGJvYXJkLmFzcHg/VUlEPTIyMDMxMTQ0NDI4NjAmVXNlcklEPUJKNDY2NSZQcm9maWxlSUQ9MjIwMzExNDQ0Mjg2MCZLZXlGaWVsZD04N0IwRTM5My0xRjBDLTQyNkUtOURFMS1BMjI1QUFGN0Y0OEFkZGSW9j0gXmX1mvJ5KLiNEjEUkwzMIw==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Acknowledgement_files/WebResource.axd" type="text/javascript"></script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="776D51AB">
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="h9XcWwpPwhWsI8YdO4_oTjlRIRyih2QzN2OzXNS6UrTULV37Q9YY0b4zVGEihSV55pKhBHY8Ic3dNBTVk5jw2FEoCoweMo4LZ52ExzJ5qvs8wgj5m1_3KxTnUM7JtlvEMIy_KQ2">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAbow40ncRzFVD/UTYG6nJ/LScQYjQs86ZO+U08Sv9J3GSoY0dc6N+JCiG+cqWIrcNeVfhCpi8o9ueGLg30meWD1o67AvSN+rczAYYR5aoAhyVnDfBx/X2H21NU86Eofe/E/HA9EcJYKmXrz5LS6Imvk4DRQlQ==">
+</div>
+        <input type="hidden" name="ctl00$HFLang" id="HFLang">
+        
+<header class="header-shadow">
+    <style>
+        #Label1 {
+            padding: 2px 2px;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bold;
+            float: right;
+            font-size: 2.6em;
+            display: block;
+        }
+    </style>
+    
+    <div class="container-fluid whitebg">
+        <div class="row tophead">
+            <div class="col-xs-12 col-sm-3 col-md-1 col-lg-1">
+                <a href="https://csvtu.digivarsity.online/Default.aspx"><img src="./Acknowledgement_files/sambalpur-university-logo.png" class="img-responsive small-view" style="width: 90px !important;" alt="Chhattisgarh Swami Vivekanad Technical University, Raipur"></a>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-5 col-lg-7">
+                <h1 style="margin-top:0">CHHATTISGARH SWAMI VIVEKANAND<br>TECHNICAL UNIVERSITY, BHILAI</h1>
+                
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 pleft0 pull-right">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3 text-right pull-right">
+                        <img src="./Acknowledgement_files/DigiVarsity.png" class="img-responsive small-view" style="height: 85px !important; text-align: right" alt="DigiUarsity (A complete University Module)">
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7" style="margin-top: -10px;">
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+
+                                    <span style="font-weight: bold; color: #B65838;"><span id="lblUser">SACHCHIDANAND CHOUDHARY </span></span>
+
+
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 text-right pull-right mtop20" id="divLogin">
+                        <a class="btn-darkgrey" href="javascript:__doPostBack(&#39;ctl00$AdminHeader$ctl00&#39;,&#39;&#39;)"><i class="fa fa-lock fa-fw"></i>LOGOUT</a>
+                        
+                        <br>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+        
+
+
+
+<link href="./Acknowledgement_files/style.admin(1).css" rel="stylesheet">
+
+<script src="./Acknowledgement_files/Wallet.js(1).download"></script>
+<style type="text/css">
+
+	.navbar-collapse {
+    padding:0 !important;
+    }
+    .navbar-brand > img {
+        width: 188px;
+        margin-top: -13px;
+    }
+
+    .title {
+        margin: 10px auto 0 50px;
+        font-size: 2em;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+    }
+
+    .camera {
+        display: block;
+        margin: -60px auto 0;
+        width: 1px;
+        border-radius: 50px;
+        position: relative;
+        border: 4px solid #f2f2f2;
+        background: #ccc;
+        padding: 10px;
+        width: 75px;
+        height: 75px;
+        background-image: url('/WebApp/Kiosk/Images/camera.png');
+        cursor: pointer;
+    }
+
+        .camera:hover {
+            box-shadow: 0 -4px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.2);
+            width: 74px;
+            height: 74px;
+        }
+
+    .panel-success {
+        margin-top: -2px;
+    }
+
+    .panel {
+        background-color: #f6f6f6;
+    }
+
+    .profile-wapper {
+        overflow: auto;
+        font-weight: 700;
+        color: Maroon;
+    }
+
+    .profile {
+        border-radius: 50px;
+        width: 105px;
+        height: 105px;
+        margin: 20px auto 10px;
+        border: 3px solid #b1b1b1;
+        display: block;
+        background: #ccc;
+    }
+
+        .profile > img {
+            border-radius: 50px;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 10px;
+            border: 2px solid #cfcfcf;
+            display: block;
+        }
+
+    #wrapper {
+        margin-bottom: 50px;
+    }
+
+    .modalBackground {
+        background-color: #F4F4F4;
+        filter: alpha(opacity=90);
+        opacity: 0.9;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 10000;
+    }
+
+    #divSteps {
+        position: relative;
+        top: 0;
+        z-index: 10;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .register-num {
+        padding: 0;
+    }
+
+    .navbar-default-gray {
+        background-color: #f8f8f8;
+        border-color: #e7e7e7;
+    }
+
+    .nv_bg {
+        background-color: #F1F4F8 !important;
+    }
+
+
+    .UserDetail p {
+        background-color: #fff !important;
+        color: #37485F !important;
+        text-align: left;
+        padding: 10px 0 10px 15px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 18px;
+        margin: 1px;
+    }
+
+    .profile_bg {
+        width: 100%;
+        /*background-color:#2f4e6c;*/
+        min-height: 150px;
+        /*margin-top: -43px;*/
+        padding-top: 7px;
+    }
+
+    .pleft0 {
+        padding-left: 0 !important;
+    }
+
+    .pright0 {
+        padding-right: 0 !important;
+    }
+
+    .fntsize13 {
+        font-size: 13px !important;
+    }
+    .leftpnlbg_grey li {
+    padding-left: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    line-height: 25px;
+    display: block;
+    width: 100%;
+}
+    .leftpnlbg_grey li a {
+    font-family: 'Heebo-Regular', Helvetica, Arial, sans-serif;
+    color: #777;
+    padding-left: 9px !important;
+}
+</style>
+
+<script>
+    $(document).ready(function () {
+        var url = window.location;
+
+        $('#side-menu > ul.nav a[href="' + url + '"]').removeClass('active').parent().parent().removeClass('out').parent().removeClass('active');
+
+        // Will also work for relative and absolute hrefs
+        $('#side-menu > ul.nav a').filter(function () {
+            return this.href == url;
+        }).removeClass('active').parent().parent().removeClass('in').parent().removeClass('active');
+        $('#side-menu').metisMenu();
+        //$('#side-menu').click();
+    });
+    $(function () {
+        $('#pnlMenu').metisMenu();
+    });
+</script>
+<div class="navbar-default-gray sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse leftpnlbg_grey p0 ng-scope" ng-app="appmoduleWallet" style="padding: 0 !important;">
+        <ul class="nav ng-scope" id="side-menu1" style="overflow: auto; display: none;" ng-controller="ctrlWallet">
+            <li>
+                <center class="profile-wapper"><br>
+                    <div class="profile">  
+                        <img src="./Acknowledgement_files/user_1.png" id="ProfileImg" name="ProfilePhoto">                          
+                                                                     
+                    </div>
+                    <p><i class="fa fa-user"></i> <span id="lblUser"></span></p> 
+                    <p id="pMobile"><i class="fa fa-mobile-phone"></i> <span id="lblMobile"></span> 
+                        </p><p id="pEmail"> <i class="fa fa-envelope"></i> <span id="lblEmail"></span></p>
+                    
+                    <p> <i class="fa fa-calendar"></i><span id="Span1"> Today : </span><span id="lblDate">25-08-2022 22:38:06</span></p>  
+                <br>
+
+                </center>
+            </li>
+        </ul>
+        
+        <div id="pnlMenu">
+	<div class="navbar-default sidebar" role="navigation"><div class="sidebar-nav leftpnlbg_grey navbar-collapse"><nav><ul class="nav nv_bg" id="side-menu"><li class="pleft0 pright0"><div class="profile_bg"><div class="profile"><img runat="server" src="./Acknowledgement_files/2147483647_239750_1404.jpg" name="ProfilePhoto" id="ProfileImg"></div></div><div class="UserDetail"><p><i class="fa fa-user"></i> <span class="fntsize13" id="lblUser" runat="server"> SACHCHIDANAND CHOUDHARY </span></p><p><i class="fa fa-graduation-cap"></i> <span class="fntsize13" id="lblRegNo" runat="server"> BJ4665 | 303302220072</span></p><p><i class="fa fa-edit"></i> <span class="fntsize13" id="lblSemester" runat="server"> 4 Semester</span></p><p><i class="fa fa-university"></i> <span class="fntsize13" id="lblCollege" runat="server"> 033 - SHRI SHANKARACHARYA INSTITUTE OF PROFESSIONAL MANAGEMENT &amp; TECHNOLOGY,RAIPUR</span></p><p><i class="fa fa-book"></i> <span class="fntsize13" id="lblProgram" runat="server"> B Tech Computer Science and Engineering (BT3022)</span></p><p><i class="fa fa-mobile-phone"></i> <span class="fntsize13" id="lblMobile" runat="server"> 6266972689</span></p><p><i class="fa fa-envelope"></i> <span class="fntsize13" id="lblEmail" runat="server">chysachin14@gmail.com</span></p></div></li><li><a href="https://csvtu.digivarsity.online/WebApp/Citizen/Forms/Dashboard.aspx?UID=2203114442860&amp;UserID=BJ4665&amp;ProfileID=2203114442860&amp;KeyField=87B0E393-1F0C-426E-9DE1-A225AAF7F48A" ?uid="2203114442860&#39;"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li><li><a href="https://csvtu.digivarsity.online/Default.aspx"><i class="fa fa-sign-out"></i> Logout</a></li></ul></nav></div></div>
+</div>
+    </div>
+</div>
+
+
+
+        
+
+<div class="navbar-default sidebar" id="divEvent" style="display: none;">
+<div class="col-lg-12 mtop20">
+    <div class="text" style="overflow: hidden; line-height: 22px; text-align: left; background-color: #E6F2FF; border-right: 1px solid #337AB7; border-bottom: 1px solid #337AB7; border-left: 1px solid #337AB7;">
+        <div style="background-color: #337AB7; color: #fff; padding: 5px 0 5px 5px; font-size: 15px;">Help Manuals </div>
+        <i class="fa fa-hand-o-up" style="padding: 4px 5px 0 5px; color: #337ab7; float: left;"></i><span style="display: flex; line-height: 18px; padding-top: 3px;"><a href="https://csvtu.digivarsity.online/g2c/Downloads/PDF/Revised%20ORDINANCE%20NO.10.pdf" target="_blank">Revised ORDINANCE NO.10</a></span>
+        <i class="fa fa-hand-o-up" style="padding: 4px 5px 0 5px; color: #337ab7; float: left;"></i><span style="display: flex; line-height: 18px; padding-top: 3px;"><a href="https://csvtu.digivarsity.online/g2c/Downloads/PDF/Ph.D.%20Advertisement%202020.pdf" target="_blank">Read e-Prospectus</a></span>
+        <i class="fa fa-hand-o-up" style="padding: 4px 5px 0 5px; color: #337ab7; float: left;"></i><span style="display: flex; line-height: 18px; padding-top: 3px;">Read advertisement / Notification</span>
+        <i class="fa fa-hand-o-up" style="padding: 4px 5px 0 5px; color: #337ab7; float: left;"></i><span style="display: flex; line-height: 18px; padding-top: 3px;"><a href="https://csvtu.digivarsity.online/g2c/Downloads/PDF/ResizeImage.pdf" target="_blank">How to check and resize image</a></span>
+        <i class="fa fa-hand-o-up" style="padding: 4px 5px 0 5px; color: #337ab7; float: left;"></i><span style="display: flex; line-height: 18px; padding-top: 3px;"><a href="https://csvtu.digivarsity.online/g2c/Downloads/PDF/List%20of%20Approved%20Research%20Center.pdf" target="_blank">List of Research Center</a></span>
+        <i class="fa fa-hand-o-up" style="padding: 4px 5px 0 5px; color: #337ab7; float: left;"></i><span style="display: flex; line-height: 18px; padding-top: 3px;"><a href="https://csvtu.digivarsity.online/g2c/Downloads/PDF/Discipline%20wise_specilizationwise_2021.pdf" target="_blank">List of Discipline &amp; Specialization</a></span>
+
+    </div>
+
+    <div class="clearfix"></div>
+    <br>
+    <div class="text" style="overflow: hidden; line-height: 22px; text-align: left; background-color: #E6F2FF; color: #777; border-right: 1px solid #337AB7; border-bottom: 1px solid #337AB7; border-left: 1px solid #337AB7; line-height: 26px; padding: 0px 0 5px 0; margin-bottom: 100px;">
+        <div style="background-color: #337AB7; color: #fff; font-size: 15px; padding: 4px;">Important Events Date</div>
+        <i class="fa fa-hand-o-right" style="padding: 4px 5px 0 5px; color: #337ab7; float: left;"></i><span style="display: flex; line-height: 18px; padding-top: 3px;">Availability of Prospectus in CSVTU website:-	 10.08.2022 onwards</span>
+        <i class="fa fa-hand-o-right" style="padding: 4px 5px 0 5px; color: #337ab7; float: left;"></i><span style="display: flex; line-height: 18px; padding-top: 3px;">Online Application Submission Date Started :- 10.08.2022</span>
+        <i class="fa fa-hand-o-right" style="padding: 4px 5px 0 5px; color: #337ab7; float: left;"></i><span style="display: flex; line-height: 18px; padding-top: 3px;">Online Application Submission Last Date :- 01.09.2022</span>
+        <i class="fa fa-hand-o-right" style="padding: 4px 5px 0 5px; color: #337ab7; float: left;"></i><span style="display: flex; line-height: 18px; padding-top: 3px;">Submitted Applications Scrutiny Date:- 02.09.2022 to 09.09.2022</span>
+        <i class="fa fa-hand-o-right" style="padding: 4px 5px 0 5px; color: #337ab7; float: left;"></i><span style="display: flex; line-height: 18px; padding-top: 3px;">Provisional List Of Submitted Application For Entrance Test And Exempted Candidate Date:-10.09.2022</span>
+        <i class="fa fa-hand-o-right" style="padding: 4px 5px 0 5px; color: #337ab7; float: left;"></i><span style="display: flex; line-height: 18px; padding-top: 3px;">Claim And Objection(Dava-Aapatti) Of Provisional List Date:- 11.09.2022 to 13.09.2022</span>
+        <i class="fa fa-hand-o-right" style="padding: 4px 5px 0 5px; color: #337ab7; float: left;"></i><span style="display: flex; line-height: 18px; padding-top: 3px;">Final List For Entrance Test And Exempted Candidate Date:- 20.09.2022</span>
+        <i class="fa fa-hand-o-right" style="padding: 4px 5px 0 5px; color: #337ab7; float: left;"></i><span style="display: flex; line-height: 18px; padding-top: 3px;">Admit Card Issuing For Candidates Date:- 22.09.2022</span>
+        <i class="fa fa-hand-o-right" style="padding: 4px 5px 0 5px; color: #337ab7; float: left;"></i><span style="display: flex; line-height: 18px; padding-top: 3px;">Entrance Test Date,Time And Place:- 29.09.2022,02.00 To 05.00pm At BIT,Durg (CG)</span>
+        
+
+    </div>
+
+
+</div>
+
+
+
+</div>
+        <div>
+            
+    <div id="page-wrapper" style="">
+        <div class="row">
+            <div class="col-lg-12">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 25px;">
+            <div class="col-md-12 box-container mTop15">
+                <div class="box-heading">
+                    <h4 id="SvcName" class="box-title register-num">Acknowledgement
+                    </h4>
+                </div>
+                <div class="box-body box-body-open">
+                    <iframe src="./Acknowledgement_files/Acknowledgement.html" id="AckURL" scrolling="yes" width="100%" height="1234" frameborder="0"></iframe>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12 box-container" id="divBtn">
+                <div class="box-body box-body-open" style="text-align: center;">
+                    <input type="button" id="btnPrint" class="btn btn-primary" value="Print" onclick="javascript: CallPrint(&#39;AckURL&#39;);" style="display: none;">
+                   <input type="submit" name="ctl00$ContentPlaceHolder1$btnHome" value="Home" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btnHome&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/WebApp/Citizen/Forms/Dashboard.aspx?UID=2203114442860&amp;UserID=BJ4665&amp;ProfileID=2203114442860&amp;KeyField=87B0E393-1F0C-426E-9DE1-A225AAF7F48A&quot;, false, false))" id="btnHome" title="Back to Home Page" class="btn btn-success">
+                </div>
+            </div>
+            <div class="clearfix">
+            </div>
+        </div>
+        
+    </div>
+
+    <input type="hidden" name="ctl00$ContentPlaceHolder1$HFAppID" id="HFAppID" value="1468383000978112">
+    <input type="hidden" name="ctl00$ContentPlaceHolder1$HFServiceID" id="HFServiceID" value="1468">
+
+
+            <script src="./Acknowledgement_files/metisMenu.js.download"></script>
+            <script>
+                if (document.getElementById("intrnlContent") != null) {
+                    angular.bootstrap(document.getElementById("intrnlContent"), ['appmodule']);
+                }
+            </script>
+            
+        </div>
+    </form>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
